@@ -6,9 +6,9 @@ app = Flask(__name__, static_folder='static')
 def home():
     return render_template('index.html')
 
-@app.route('/about', methods=["GET", "POST"])
-def about():
-    pass
+@app.route('/about')
+def about_me():
+    return render_template('about.html')
     
 
 if __name__ == "__main__":

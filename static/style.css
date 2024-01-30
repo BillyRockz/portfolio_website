@@ -59,8 +59,19 @@ nav{
     margin-top: 15%;
     margin-left: 5%;
     font-size: 17.5px;
-    color: #2e2e2e;
+    color: #ffffff;
+    opacity: 0;
+    transition: color 1s, opacity 1s;
+    animation: fadeIn 2s forwards;
 }
+
+@keyframes fadeIn{
+    to {
+        opacity: 1;
+        color: #000;
+    }
+}
+
 .header-text h1{
     font-style: normal;
     font-size: 45px;
@@ -68,8 +79,9 @@ nav{
     color: #000000;
 }
 .header-text h2{
+    line-height: 20px;
     font-style: normal;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 20px;
     color: #2f2e2e;
 }
@@ -100,20 +112,18 @@ nav{
 
 
 #about-me{
-    width: 100%;
-    height: 100vh;
     background-color: #000000;
+    background-size: cover;
+    background-position: center;
 }
 
-.about-me{
-    color: #fff;
-}
 
 .banner .container nav ul li a{
     color: #ffffff;
     text-decoration: none;
     font-size: 15px;
     font-weight: 400;
+    margin-left: -5.5px;
     position: relative;
 
 }
@@ -123,6 +133,10 @@ nav{
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
+    color: #000000;
+    opacity: 0;
+    transition: color 1s, opacity 1s;
+    animation: fadeInWhite 2s forwards;
 }
 
 .column-left{
@@ -138,10 +152,42 @@ nav{
     flex-basis: 60%;
 }
 
+@keyframes fadeInWhite{
+    to {
+        opacity: 1;
+        color: #ffffff;
+    }
+}
+
 .column-right h1{
     font-size: 50px;
 }
 
 .column-right p{
+    line-height: 25px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     color: #bfbfbf;
+    font-weight: 250;
+}
+
+.technologies-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.skill-box{
+    margin-top: 15px;
+    padding: 1rem 2rem;
+    margin-bottom: 0.4rem;
+    margin-right: 1rem;
+    font-size: 14px;
+    background: rgba(153,153,153,.2);
+    border-radius: 5px;
+    font-weight: 500;
+    color: #ffffff
 }

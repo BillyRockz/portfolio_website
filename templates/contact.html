@@ -5,24 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guillermo Piedra - Website</title>
+    <script src="https://kit.fontawesome.com/ef23bfbcbb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <div id="about-me">
+    <div id="contact">
         <div class="banner">
             <div class="container">
                 <nav>
-                    <img src="/static/images/logo_white.svg" class="logo_white">
+                    <img src="/static/images/logo.svg" class="logo_white">
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="about">About</a></li>
                         <li><a href="contact">Contact</a></li>
-                        <li><a href="resume">Resume</a></li>
+                        <li><a href="/static/docs/Guillermo_Resume_Software_Engineer.pdf">Resume <i class="fa-solid fa-download"></i></a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        
+            
+                <div class="container">
+                    <div class="inbox">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="subtitle">Contact Me</h1>
+                            <a href="mailto:guillermopr95@gmail.com" style="color: black;"><p><i class="fa-solid fa-paper-plane"></i> guillermopr95@gmail.com</p></a>
+                            <p><i class="fa-solid fa-phone-volume"></i> +1 (954) 860-4694</p>
+                        </div>
+                        <div class="contact-right">
+                            <form>
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="submitbtn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 </body>
 </html>

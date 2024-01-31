@@ -88,13 +88,6 @@ nav{
     margin-top: 20px;
     color: #2f2e2e;
 }
-.terminal_gif{
-    margin-top: -250px;
-    margin-left: 70%;
-    width: 250px;
-    height: 250px;
-    transition: box-shadow 0.2s, transform 0.3s;
-}
 
 .social-icons a i{
     color: #2e2e2e;
@@ -102,30 +95,21 @@ nav{
     margin: 30px 20px; 
     margin-left: 0px;
     font-size: 30px;
+    transition: transform 0.5s;
+}
+
+.social-icons a i:hover{
+    transform: translateY(-5px);
+    color: #525252;
+    cursor: pointer;
 }
 
 /* ----About me section---- */
 
 
-#about-me{
-    background-color: #ffffff;
-    background-size: cover;
-    background-position: center;
-}
-
-
-.banner .container nav ul li a{
-    color: #000000;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 400;
-    margin-left: -5.5px;
-    position: relative;
-
-}
-
 .row{
-    padding: 80px;
+    margin-left: 75px;
+    margin-top: 40px;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
@@ -136,6 +120,7 @@ nav{
 }
 
 .column-left{
+    margin-top: 60px;
     flex-basis: 35%;
 }
 
@@ -145,6 +130,7 @@ nav{
 }
 
 .column-right{
+    margin-top: 140px;
     flex-basis: 60%;
 }
 
@@ -156,22 +142,16 @@ nav{
 }
 
 .column-right h1{
-    font-size:35px;
+    font-size:45px;
 }
 
 .column-right p{
     line-height: 25px;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
     color: #767676;
     font-weight: 250;
-}
-
-.column-right h2{
-    margin-top: -25px;
 }
 
 .technologies-container{
@@ -181,11 +161,12 @@ nav{
   }
 
   .skills-section h2{
-    font-size: 30px;
+    margin-top: -45px;
+    font-size: 45px;
   }
 
 .skill-box{
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 1rem 2rem;
     margin-bottom: 0.4rem;
     margin-right: 1rem;
@@ -194,4 +175,62 @@ nav{
     border-radius: 5px;
     font-weight: 600;
     color: #7d7d7d
+}
+
+/*------- contact section -------*/ 
+
+.inbox .row{
+    margin-top: 160px;
+}
+
+.contact-left p i{
+    width: 25px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-left p{
+    margin-top: 20px;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.subtitle{
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgba(87, 87, 87, 0.192);
+    padding: 15px;
+    margin: 15px 0;
+    color: #070707;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+form .submitbtn{
+    padding: 14px 60px;
+    color: #ffffff;
+    display: inline-block;
+    background: #878787;
+    border-radius: 15px;
+    font-size: 18px;
+    border: 0;
+}
+
+form .submitbtn:hover{
+    background-color: #adadad;
+    cursor: pointer;
 }

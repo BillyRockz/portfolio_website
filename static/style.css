@@ -41,6 +41,8 @@ nav{
     position: relative;
 
 }
+
+
 .container nav ul li a::after{
     content: '';
     width: 0;
@@ -54,10 +56,10 @@ nav{
 .container nav ul li a:hover::after{
     width: 100%;
 }
+
 .header-text{
     font-style: italic;
     margin-top: 15%;
-    margin-left: 5%;
     font-size: 17.5px;
     color: #ffffff;
     opacity: 0;
@@ -92,14 +94,7 @@ nav{
     height: 250px;
     transition: box-shadow 0.2s, transform 0.3s;
 }
-.terminal_gif:hover{
-    margin-top: -250px;
-    margin-left: 70%;
-    width: 265px;
-    height: 265px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    transform: scale(1.05);
-}
+
 .social-icons a i{
     color: #2e2e2e;
     list-style: none;

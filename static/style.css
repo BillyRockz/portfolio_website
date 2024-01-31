@@ -155,7 +155,7 @@ nav{
 }
 
 .column-right h1{
-    font-size: 50px;
+    font-size:35px;
 }
 
 .column-right p{
@@ -169,10 +169,14 @@ nav{
     font-weight: 250;
 }
 
-.technologies-container {
+.technologies-container{
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .skills-section h2{
+    font-size: 30px;
   }
 
 .skill-box{

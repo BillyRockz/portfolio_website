@@ -108,7 +108,7 @@ nav{
 
 
 .row{
-    margin-left: 75px;
+    padding: 65px;
     margin-top: 40px;
     flex-wrap: wrap;
     display: flex;
@@ -130,8 +130,9 @@ nav{
 }
 
 .column-right{
-    margin-top: 140px;
+    margin-top: 70px;
     flex-basis: 60%;
+    justify-content: center;
 }
 
 @keyframes fadeInWhite{
@@ -148,8 +149,8 @@ nav{
 .column-right p{
     line-height: 25px;
     display: block;
-    margin-block-start: 10px;
-    margin-block-end: 10px;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
     color: #767676;
     font-weight: 250;
 }
